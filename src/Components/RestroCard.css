@@ -1,0 +1,11 @@
+/* border: "1px solid gray", width:'320px', margin:'20px', display:'flex' */
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.image-detail{
+  width: 250px;
+  border-radius: 10px;
+  /* height: 200px; */
+}
