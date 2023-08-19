@@ -6,9 +6,9 @@ import Header from "../Components/Header";
 const Home = () => {
   return (
     <div>
-      <Header />
+
       <Body />
-      <Footer />
+
     </div>
   );
 };

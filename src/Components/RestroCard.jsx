@@ -1,5 +1,5 @@
 import React from "react";
-import { IMAGE_LINK_CDN } from "../constant/conflict";
+import { IMAGE_LINK_CDN } from "../constant/config";
 import "./RestroCard.css";
 
 const RestroCard = ({ restrodetail }) => {
