@@ -9,3 +9,11 @@
   border-radius: 10px;
   /* height: 200px; */
 }
+.restrocard-text{
+  text-decoration: none;
+  width: 250px;
+}
+.rating{
+  display: flex;
+  gap: 10px;
+}

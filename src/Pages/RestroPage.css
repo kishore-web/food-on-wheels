@@ -1,0 +1,23 @@
+.restropage-container{
+  max-width: 920px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.offer-card{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid black;
+  width: 250px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.menu-card{
+  display: flex;
+  justify-content: space-between;
+}
+.menu-card-text{
+  display: flex;
+  flex-direction: column;
+}
