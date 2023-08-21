@@ -117,9 +117,9 @@ const Body = () => {
 
   return (
     <div>
-      <div>
-        <input type="text" value={input} onChange={handleChange} />
-        <button onClick={handleSearch}>Search</button>
+      <div className="search-container">
+        <input type="text" className="search-restro" value={input} onChange={handleChange}placeholder="Search for Restaurant" />
+        <button onClick={handleSearch} className="search-btn" >Search</button>
       </div>
       <div className="container">
         {filteredrestro?.length === 0 ? (
