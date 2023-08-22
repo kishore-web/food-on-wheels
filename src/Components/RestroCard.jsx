@@ -9,9 +9,8 @@ const RestroCard = ({ restrodetail }) => {
   // console.log(cuisineType)
   return (
     <div className="card">
-      <div>
+      <div className="image-detail">
         <img
-          className="image-detail"
           src={IMAGE_LINK_CDN + restrodetail?.info?.cloudinaryImageId}
           alt="food-image"
         />
@@ -30,7 +29,7 @@ const RestroCard = ({ restrodetail }) => {
           <span>{ratingVal}</span>
         </div>
         <div className="restro-text">
-           <div>{cuisineType.map(item=><span key={item}>{item},&nbsp;</span>)}</div>
+           <div className="cuisine-type">{cuisineType.map(item=><span key={item}>{item},&nbsp;</span>)}</div>
            <div>{restrodetail?.info?.areaName}</div>
         </div>
        

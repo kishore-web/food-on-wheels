@@ -1,7 +1,21 @@
 .restropage-container{
   max-width: 920px;
-  border: 1px solid red;
-  margin: 0 auto;
+  /* border: 1px solid red; */
+  margin: 30px auto;
+}
+.restroPage-header-main{
+  background-color: red;
+}
+.restroPage-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.restro-image{
+  margin-right: 30px;
+}
+.restro-image>img{
+  border-radius: 20px;
 }
 .offer-card{
   display: flex;
@@ -15,9 +29,7 @@
 
 .menu-card{
   display: flex;
-  justify-content: space-between;
-}
-.menu-card-text{
-  display: flex;
-  flex-direction: column;
+ flex-direction: column;
+ row-gap: 10px;
+ margin: 20px 0;
 }

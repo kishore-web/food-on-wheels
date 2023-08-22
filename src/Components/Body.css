@@ -1,15 +1,22 @@
-
+.container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 50px 100px;
-  gap: 20px;
+  display: flex;
+  max-width: 1280px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 15px;
 }
 .search-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
+  margin: 30px auto 10px auto;
 }
 .search-restro {
   height: 40px;

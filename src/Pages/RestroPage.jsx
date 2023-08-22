@@ -16,23 +16,34 @@ const RestroPage = () => {
     specificRestro?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
       ?.card?.card?.itemCards;
   console.log(recommendedMenu);
+  const cuisineType = specificRestroLink?.cuisines
+  console.log(cuisineType)
   return (
     <div className="restropage-container">
       {specificRestro ? (
         <div>
-          <div className="restroPage-desc">
-            <div>
-              <img src={IMAGE_LINK_CDN + imageIdCloud} alt="restro image" />
-            </div>
-            <div>
-              <span>{specificRestroLink?.name}</span>
-              <span>{specificRestroLink?.avgRating}</span>
+          <div className="restroPage-header-main">
+            <div className="restroPage-header">
+              <div className="restro-image">
+                <img src={IMAGE_LINK_CDN + imageIdCloud} alt="restro image" />
+              </div>
+              <div className="restro-desc">
+                <span>
+                  {specificRestroLink?.name}, {specificRestroLink.city}
+                </span>
+                <span>
+                  {specificRestroLink?.avgRating} /
+                  {specificRestroLink.totalRatingsString}
+                </span>
+                <p>{cuisineType.map((item)=><span>{item}</span>)}</p>
+                <p>
+                  Cost for Two:&nbsp; {specificRestroLink.costForTwoMessage}
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="menu-card">
-            {/* <h3>{dishName?.info?.name} </h3> */}
-            {/* <img src={IMAGE_LINK_CDN + dishImageCloud} alt="dish image" /> */}
             {recommendedMenu.map((item) => {
               return <RestroMenu menu={item} />;
             })}
