@@ -15,7 +15,7 @@ const Header = () => {
           <li>About</li>
         </Link>
         <Link to="contactus">
-          <li>ContactUs</li>{" "}
+          <li>ContactUs</li>
         </Link>
         <Link to="cartpage">
           <li>Cart-{cartitems.length}</li>
