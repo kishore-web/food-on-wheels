@@ -9,7 +9,6 @@ const RestroMenu = ({ menu }) => {
   const addFoodItem = () => {
     dispatch(addItem(menu));
   };
-
   console.log(menu);
   return (
     <div className="menuItem-container">

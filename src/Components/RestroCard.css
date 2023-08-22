@@ -21,11 +21,12 @@
 .restro-name {
   margin-top: 10px;
   font-weight: 500;
+  word-wrap: break-word;
 }
 .restrocard-description {
   text-decoration: none;
   padding-left: 10px;
-  /* width: 250px; */
+  width: 265px;
 }
 .rating {
   padding: 6px 0;
@@ -44,5 +45,6 @@
   font-weight: 300;
 }
 .restro-text .cuisine-type{
-  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
 }
