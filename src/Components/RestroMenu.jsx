@@ -19,9 +19,8 @@ const RestroMenu = ({ menu }) => {
       </div>
       <div className="image-add">
         <div className="image-div">
-          <img className="item-image" src={IMAGE_LINK_CDN + menu?.card?.info?.imageId} alt="" />
+          <img className="item-image" src={IMAGE_LINK_CDN + menu?.card?.info?.imageId} alt="ItemImage" />
         </div>
-        
         <button className="add-btn"
           onClick={() => {
             addFoodItem(menu);

@@ -8,6 +8,8 @@ import { Provider } from "react-redux";
 import store from "./Redux/store";
 import CartPage from "./Pages/CartPage";
 import ErrorPage from "./Utils/ErrorPage";
+import SignIn from "./Pages/SignIn"
+import ContactUs from "./Pages/ContactUs"
 
 const App = () => {
   return (
@@ -38,6 +40,14 @@ export const appRouter = createBrowserRouter([
       {
         path: "cartpage/",
         element: <CartPage />,
+      },
+      {
+        path: "contactus/",
+        element: <ContactUs />,
+      },
+       {
+        path: "signin/",
+        element: <SignIn />,
       }
     ],
   },

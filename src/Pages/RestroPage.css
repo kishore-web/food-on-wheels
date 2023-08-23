@@ -3,19 +3,17 @@
   /* border: 1px solid red; */
   margin: 30px auto;
 }
-.restroPage-header-main{
-  background-color: red;
-}
+
 .restroPage-header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
-.restro-image{
-  margin-right: 30px;
-}
-.restro-image>img{
-  border-radius: 20px;
+
+.restro-desc{
+  margin-left: 20px;
 }
 .offer-card{
   display: flex;

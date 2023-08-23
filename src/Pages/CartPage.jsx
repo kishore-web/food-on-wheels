@@ -11,9 +11,8 @@ const CartPage = () => {
     dispatch(clearCart())
   }
   return (
-    <div>
+    <div className='cart-container'>
       <h1>Cart Item - {cartItems.length}</h1>
-      <button onClick={handleClearCart}>Clear</button>
       {
         cartItems.map((item)=>{
           console.log(item)
@@ -22,6 +21,7 @@ const CartPage = () => {
           </div>
         })
       }
+      <button onClick={handleClearCart}>Clear</button>
     </div>
   )
 }
