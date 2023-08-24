@@ -37,7 +37,7 @@ const RestroPage = () => {
                 </span>
                 <p>{cuisineType.map((item)=><span>{item}</span>)}</p>
                 <p>
-                  Cost for Two:&nbsp; {specificRestroLink.costForTwoMessage}
+                  Avg Cost:&nbsp; {specificRestroLink.costForTwoMessage}
                 </p>
               </div>
             </div>

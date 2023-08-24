@@ -7,6 +7,9 @@
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+button{
+  cursor: pointer;
+}
 
 ul{
   list-style-type: none;
@@ -14,4 +17,28 @@ ul{
 a {
   text-decoration: none;
   color: black;
+}
+.light-theme{
+  background-color: white;
+
+}
+.dark-theme{
+  background-color: black;
+
+}
+
+.dark-theme .rating-value{
+  color: white;
+}
+.dark-theme .header-bar{
+  /* background-color: rgb(74, 74, 74); */
+  background-color: rgb(22, 22, 22);
+  color: white;
+  box-shadow: 0 15px 40px -20px white;
+}
+.dark-theme .logo-div{
+  color: white;
+}
+.dark-theme a{
+  color: white;
 }

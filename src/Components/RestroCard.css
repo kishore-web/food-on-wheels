@@ -33,6 +33,7 @@
   display: flex;
   gap: 4px;
 }
+
 .rating-star-green {
   color: green;
 }

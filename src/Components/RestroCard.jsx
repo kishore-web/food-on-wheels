@@ -26,7 +26,7 @@ const RestroCard = ({ restrodetail }) => {
               <FaStar className="rating-star-red" />
             )}
           </span>
-          <span>{ratingVal}</span>
+          <span className="rating-value">{ratingVal}</span>
         </div>
         <div className="restro-text">
            <div className="cuisine-type">{cuisineType.map(item=><span key={item}>{item},&nbsp;</span>)}</div>
