@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Body from "./Components/Body";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 import RestroPage from "./Pages/RestroPage";
 import { Provider } from "react-redux";
 import store from "./Redux/store";

@@ -20,7 +20,7 @@ const RestroCard = ({ restrodetail }) => {
         <div className="rating">
           {/* <span className="rating-star">  </span> */}
           <span>
-            {ratingVal > 4 ? (
+            {ratingVal >= 4 ? (
               <FaStar className="rating-star-green" />
             ) : (
               <FaStar className="rating-star-red" />
