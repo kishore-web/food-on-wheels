@@ -35,7 +35,7 @@ const RestroPage = () => {
                   {specificRestroLink?.avgRating} /
                   {specificRestroLink.totalRatingsString}
                 </span>
-                <p>{cuisineType.map((item)=><span>{item}</span>)}</p>
+                <p>{cuisineType.map((item,index)=><span key={index} >{item}</span>)}</p>
                 <p>
                   Avg Cost:&nbsp; {specificRestroLink.costForTwoMessage}
                 </p>
@@ -44,8 +44,8 @@ const RestroPage = () => {
           </div>
 
           <div className="menu-card">
-            {recommendedMenu.map((item) => {
-              return <RestroMenu menu={item} />;
+            {recommendedMenu.map((item,index) => {
+              return <RestroMenu menu={item} key={index} />;
             })}
           </div>
         </div>
